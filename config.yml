@@ -1,0 +1,5 @@
+lambda_a:
+  entry: examples/sieve-of-eratosthenes/lambda-a/src/index.ts
+
+lambda_b:
+  entry: examples/sieve-of-eratosthenes/lambda-b/src/index.ts

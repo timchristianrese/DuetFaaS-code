@@ -1,0 +1,21 @@
+{
+  "name": "@faas-duet/js-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.ts --bundle --minify --sourcemap --platform=node --format=cjs --outfile=dist/index.js --external:@aws-sdk --external:@smithy --external:uuid"
+  },
+  "keywords": [],
+  "author": "Sebastian Koch",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.136",
+    "@types/express": "^4.17.21",
+    "esbuild": "^0.20.2"
+  }
+}

@@ -1,0 +1,14 @@
+config:
+  # target: "{{ $env.host }}"
+  target: <INCLUDE TARGET>
+  processor: "./metrics.js"
+  phases:
+    - duration: 300
+      arrivalCount: 1500
+      name: load phase
+
+scenarios:
+  - afterResponse: "trackResponseTimeWithoutQueueTime"
+    flow:
+      - post:
+          url: "/invocations"

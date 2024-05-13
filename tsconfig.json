@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "isolatedModules": false,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"],
+    "strict": true,
+    "moduleResolution": "NodeNext"
+  },
+  "include": ["cli"],
+  "exclude": [
+    "node_modules",
+    "cli/duet-server-template",
+    ".faas-duet",
+    "examples"
+  ]
+}
