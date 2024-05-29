@@ -1,4 +1,6 @@
 # DuetFaaS-code
+## Paper 
+https://arxiv.org/abs/2405.15610
 ## Install the required dependencies
 ```sh
 pnpm install
